@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NBA Scores Scraper</title>
+</head>
+<body>
+    <h1>NBA Scores Scraper</h1>
+    <form method="post">
+        <label for="date">Enter a date (MM/DD/YYYY): </label>
+        <input type="text" name="date" id="date" required>
+        <button type="submit">Retrieve Scores</button>
+    </form>
+    <hr>
+    {% if scores %}
+    <h2>NBA Scores</h2>
+    <ul>
+        {% for score in scores %}
+        <li>{{ score }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+</body>
+</html>
