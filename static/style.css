@@ -1,0 +1,49 @@
+/* static/style.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Horizontally center all content within the body */
+}
+
+h1, h2 {
+    color: #333;
+}
+
+form {
+    margin-top: 20px;
+    display: inline-block;
+    text-align: left; /* Align form contents to the left */
+}
+
+input[type="text"] {
+    padding: 8px;
+    margin: 5px;
+}
+
+button[type="submit"] {
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    text-align: center; /* Horizontally center the scores */
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+.scores{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}

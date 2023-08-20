@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>NBA Scores Scraper</title>
+    <title>NBA on This Day</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <h1>NBA Scores Scraper</h1>
+    <h1>NBA Scores on This Day</h1>
     <form method="post">
         <label for="date">Enter a date (MM/DD/YYYY): </label>
         <input type="text" name="date" id="date" required>
         <button type="submit">Retrieve Scores</button>
     </form>
-    <hr>
     {% if scores %}
-    <h2>NBA Scores</h2>
-    <ul>
-        {% for score in scores %}
-        <li>{{ score }}</li>
-        {% endfor %}
-    </ul>
+    <div class = "scores"></div>
+        <h2>NBA Scores</h2>
+        <ul>
+            {% for score in scores %}
+            <li>{{ score }}</li>
+            {% endfor %}
+        </ul>
+    </div>
     {% endif %}
 </body>
 </html>
